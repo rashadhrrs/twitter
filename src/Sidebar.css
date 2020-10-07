@@ -1,5 +1,8 @@
-.logo{
+.sidebar-twitterIcon{
     color: var(--twitter-color);
+    font-size: 30px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .sidebar {
@@ -11,7 +14,7 @@
     padding-right: 20px;
 }
 
-.sidebar__tweet {
+.sidebar-tweet {
     background-color: var(--twitter-color) !important;
     border: none !important;
     color: white !important;
