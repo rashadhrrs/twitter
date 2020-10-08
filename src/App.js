@@ -9,12 +9,8 @@ function App() {
   //BEM
   return (
     <div className="app">
-      {/* Sidebar */}
       <Sidebar />
-      {/* Feed */}
       <Feed/>
-      
-      {/* Widgets */}
       <Widgets/>
     </div>
   );
