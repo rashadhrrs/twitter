@@ -12,28 +12,26 @@ function Post({
     avatar,
     displayName,
     userName,
-    verified,
-    text,
-    image
+    text
 }) {
     return (
         <div className="post">
             <div className="post-avatar">
-                <Avatar/>
+                <Avatar src={avatar}/>
             </div>
             <div className="post-body">
                 <div className="post-header">
                     <div className="post-headerText">
                         <h3>
-                            Rashad Harris {" "}
+                            {displayName} {" "}
                             <span className="post-headerSpecial">
                                 <VerifiedUser className="post-badge"/>
-                                @RashadHrrs
+                                {userName}
                             </span>
                         </h3>
                     </div>
                     <div className="post-headerDescription">
-                        <p>Just tweet a tweet</p>
+                        <p>{text}</p>
                     </div>
                 </div>
                 

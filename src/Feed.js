@@ -15,7 +15,11 @@ function Feed() {
             <TweetBox />
 
             {/* Post */}
-            <Post/>
+            <Post
+            displayName="Rashad Harris"
+            userName="@rashadhrrs"
+            text="just a tweet"
+            />
             {/* Post */}
             {/* Post */}
             {/* Post */}
