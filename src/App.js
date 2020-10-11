@@ -1,17 +1,21 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Widgets from './Widgets';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import LandingPage from './LandingPage';
+import Login from './Login';
+import Profile from './Profile';
+
 
 
 function App() {
   //BEM
   return (
-    <div className="app">
-      <Sidebar />
-      <Feed/>
-      <Widgets/>
+    <div className="App">
+      <Router>
+      <Route exact path="/" component={Login} />
+        <Route exact path="/landingPage" component={LandingPage} />
+        <Route exact path="/profile" component={Profile} />
+      </Router>
     </div>
   );
 }
